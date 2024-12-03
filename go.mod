@@ -1,4 +1,4 @@
-module github.com/felixge/fgprof
+module github.com/Mojashi/fgprof
 
 go 1.14
 
