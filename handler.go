@@ -43,6 +43,7 @@ func Handler() http.Handler {
 			runningProfile.stopper()
 			w.WriteHeader(http.StatusOK)
 			runningProfile.writer.WriteTo(w)
+			runningProfile = nil
 
 		default:
 			w.WriteHeader(http.StatusBadRequest)
